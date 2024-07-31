@@ -172,6 +172,7 @@ class Cli {
         },
       ])
       .then((answers) => {
+        const truck = new Truck(
         Cli.generateVin(),
           answers.color,
           answers.make,
@@ -179,10 +180,11 @@ class Cli {
           parseInt(answers.year),
           parseInt(answers.weight),
           parseInt(answers.topSpeed),
-          []
-      });
+          [],
+          answers.towingCapacity
+      );
     // push the car to the vehicles array
-    this.vehicles.push(car);
+    this.vehicles.push(truck);
     // set the selectedVehicleVin to the vin of the car
     this.selectedVehicleVin = truck.vin;
     // perform actions on the car
