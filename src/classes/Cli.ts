@@ -112,7 +112,7 @@ class Cli {
       ])
       .then((answers) => {
         const car = new Car(
-          // TODO: The generateVin method is static and should be called using the class name Cli, make sure to use Cli.generateVin() for creating a truck and motorbike as well!
+         
           Cli.generateVin(),
           answers.color,
           answers.make,
@@ -189,10 +189,6 @@ class Cli {
     this.selectedVehicleVin = truck.vin;
     // perform actions on the car
     this.performActions();
-    // TODO: Use the answers object to pass the required properties to the Truck constructor
-    // TODO: push the truck to the vehicles array
-    // TODO: set the selectedVehicleVin to the vin of the truck
-    // TODO: perform actions on the truck
   });
 }
 
@@ -252,10 +248,23 @@ createMotorbike(): void {
     },
   ])
     .then((answers) => {
-      // TODO: Use the answers object to pass the required properties to the Motorbike constructor
-      // TODO: push the motorbike to the vehicles array
-      // TODO: set the selectedVehicleVin to the vin of the motorbike
-      // TODO: perform actions on the motorbike
+      const motorBike = new Motorbike(
+        Cli.generateVin(),
+          answers.color,
+          answers.make,
+          answers.model,
+          parseInt(answers.year),
+          parseInt(answers.weight),
+          parseInt(answers.topSpeed),
+          [],
+      );
+    
+      // push the car to the vehicles array
+    this.vehicles.push(motorBike);
+    // set the selectedVehicleVin to the vin of the car
+    this.selectedVehicleVin = motorBike.vin;
+    // perform actions on the car
+    this.performActions();
     });
 }
 
@@ -291,7 +300,6 @@ performActions(): void {
       type: 'list',
       name: 'action',
       message: 'Select an action',
-      // TODO: add options to tow and wheelie
       choices: [
         'Print details',
         'Start vehicle',
@@ -301,6 +309,8 @@ performActions(): void {
         'Turn right',
         'Turn left',
         'Reverse',
+        'tow',
+        'wheelie',
         'Select or create another vehicle',
         'Exit',
       ],
