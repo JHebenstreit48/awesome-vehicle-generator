@@ -39,7 +39,7 @@ https://www.google.com/search?q=new+keyword+in+typescript&oq=New+keyword+in+Type
 https://blog.logrocket.com/when-how-use-interfaces-classes-typescript/,
 https://zoom.us/rec/play/znB-BDOz6bYOiu6OcD6QFeWl2oCy_E52B1i97t8Ji5bMbQY47eZtuKzNHvUK7FZ-hGEFM2odHNZ29Q4i.6tFtMmmqBOQFStQ2
 
-
+I also received advice when I got stuck for Argenis (Ruben) Dominguez and Carlin Shaw.
 ## Tests
 
 npm run build and npm run start.
