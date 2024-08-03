@@ -37,9 +37,11 @@ https://www.w3schools.com/js/js_object_accessors.asp,
 https://www.google.com/search?q=what+does+the+keyword+implements+do+in+JavaScript&oq=what+does+the+keyword+implements+do+in+JavaScript&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRifBTIHCAUQIRifBTIHCAYQIRifBTIHCAcQIRifBTIHCAgQIRifBdIBCTEwMzM3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8,
 https://www.google.com/search?q=new+keyword+in+typescript&oq=New+keyword+in+TypeScript&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyCAgBEAAYFhgeMggIAhAAGBYYHjIICAMQABgWGB4yCAgEEAAYFhgeMg0IBRAAGIYDGIAEGIoFMg0IBhAAGIYDGIAEGIoFMgoIBxAAGIAEGKIE0gEINjkzNWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8,
 https://blog.logrocket.com/when-how-use-interfaces-classes-typescript/,
-https://zoom.us/rec/play/znB-BDOz6bYOiu6OcD6QFeWl2oCy_E52B1i97t8Ji5bMbQY47eZtuKzNHvUK7FZ-hGEFM2odHNZ29Q4i.6tFtMmmqBOQFStQ2
+https://zoom.us/rec/play/znB-BDOz6bYOiu6OcD6QFeWl2oCy_E52B1i97t8Ji5bMbQY47eZtuKzNHvUK7FZ-hGEFM2odHNZ29Q4i.6tFtMmmqBOQFStQ2,
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof,
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return,
 
-I also received advice when I got stuck for Argenis (Ruben) Dominguez and Carlin Shaw.
+I also received advice when I got stuck for Argenis (Ruben) Dominguez, Carlin Shaw, hints from Leif Heitland. Link posted above. 
 ## Tests
 
 npm run build and npm run start.
