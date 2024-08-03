@@ -270,7 +270,7 @@ class Cli {
 
   // method to find a vehicle to tow
   // TODO: add a parameter to accept a truck object
-  findVehicleToTow(): void {
+  findVehicleToTow(Truck): void {
     inquirer
       .prompt([
         {
@@ -289,12 +289,21 @@ class Cli {
         // TODO: check if the selected vehicle is the truck
         // TODO: if it is, log that the truck cannot tow itself then perform actions on the truck to allow the user to select another action
         // TODO: if it is not, tow the selected vehicle then perform actions on the truck to allow the user to select another action
-        // if (this.vehicles === this.Truck) {
-
-        // } else {
-
-        // }
-      });
+        if (this.vehicles === Truck) {
+          console.log(`${Truck}.} cannot tow itself.`)
+        } else (answers.action === `Tow ${this.vehicles}`) {
+          // start the cli to return to the initial prompt if the user wants to select or create another vehicle
+          this.startCli();
+          return;
+        } else {
+          // exit the cli if the user selects exit
+          this.exit = true;
+        }
+        if (!this.exit) {
+          // if the user does not want to exit, perform actions on the selected vehicle
+          this.performActions();
+        }
+      })
   }
 
   // method to perform actions on a vehicle
@@ -379,56 +388,58 @@ class Cli {
               this.vehicles[i].reverse();
             }
           }
+          // TODO: add statements to perform the tow action only if the selected vehicle is a truck. Call the findVehicleToTow method to find a vehicle to tow and pass the selected truck as an argument. After calling the findVehicleToTow method, you will need to return to avoid instantly calling the performActions method again since findVehicleToTow is asynchronous.
+
+        
+
+        } else if (answers.action === 'tow') {
+          //: find the selected vehicle and make sure it is a truck
+          for (let i = 0; i < this.vehicles.length; i++) {
+            if (this.vehicles[i].vin === this.selectedVehicleVin) {
+              this.vehicles[i].findVehicleToTow(Vehicle instanceof Truck);
+              return Truck;
+            }
+          }
         }
-      })
-        // TODO: add statements to perform the tow action only if the selected vehicle is a truck. Call the findVehicleToTow method to find a vehicle to tow and pass the selected truck as an argument. After calling the findVehicleToTow method, you will need to return to avoid instantly calling the performActions method again since findVehicleToTow is asynchronous.
+
         // TODO: add statements to perform the wheelie action only if the selected vehicle is a motorbike
 
-      // } else if (answers.action === 'find a vehicle to tow') {
-      //   // find the selected vehicle and reverse it
-      //   for (let i = 0; i < this.vehicles.length; i++) {
-      //     if (this.vehicles[i].vin === this.selectedVehicleVin) {
-      //       this.vehicles[i].findVehicleToTow();
-      //     }
-      //   }
-      // }
-      
-      else if (answers.action === 'Select or create another vehicle') {
-      // start the cli to return to the initial prompt if the user wants to select or create another vehicle
-      this.startCli();
-      return;
-    } else {
-      // exit the cli if the user selects exit
-      this.exit = true;
-    }
-    if (!this.exit) {
-      // if the user does not want to exit, perform actions on the selected vehicle
-      this.performActions();
-    }
-  });
-}
+        else if (answers.action === 'Select or create another vehicle') {
+          // start the cli to return to the initial prompt if the user wants to select or create another vehicle
+          this.startCli();
+          return;
+        } else {
+          // exit the cli if the user selects exit
+          this.exit = true;
+        }
+        if (!this.exit) {
+          // if the user does not want to exit, perform actions on the selected vehicle
+          this.performActions();
+        }
+      });
+  };
 
-// method to start the cli
-startCli(): void {
-  inquirer
+  // method to start the cli
+  startCli(): void {
+    inquirer
       .prompt([
-    {
-      type: 'list',
-      name: 'CreateOrSelect',
-      message:
-        'Would you like to create a new vehicle or perform an action on an existing vehicle?',
-      choices: ['Create a new vehicle', 'Select an existing vehicle'],
-    },
-  ])
-    .then((answers) => {
-      // check if the user wants to create a new vehicle or select an existing vehicle
-      if (answers.CreateOrSelect === 'Create a new vehicle') {
-        this.createVehicle();
-      } else {
-        this.chooseVehicle();
-      }
-    });
-}
+        {
+          type: 'list',
+          name: 'CreateOrSelect',
+          message:
+            'Would you like to create a new vehicle or perform an action on an existing vehicle?',
+          choices: ['Create a new vehicle', 'Select an existing vehicle'],
+        },
+      ])
+      .then((answers) => {
+        // check if the user wants to create a new vehicle or select an existing vehicle
+        if (answers.CreateOrSelect === 'Create a new vehicle') {
+          this.createVehicle();
+        } else {
+          this.chooseVehicle();
+        }
+      });
+  }
 }
 
 // export the Cli class
