@@ -41,7 +41,19 @@ https://zoom.us/rec/play/znB-BDOz6bYOiu6OcD6QFeWl2oCy_E52B1i97t8Ji5bMbQY47eZtuKz
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof,
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return,
 
-I also received advice when I got stuck for Argenis (Ruben) Dominguez, Carlin Shaw, hints from Leif Heitland. Link posted above. 
+I also received advice when I got stuck for Argenis (Ruben) Dominguez, Carlin Shaw, hints from Leif Heitland. Phy Pham assisted me with the following code, but it only addressed a portion of the problems I was having at the time. I also had assistance from tutor Wesley Clements on 8/04/2024 as of resolving the errors that were in my code as of the day before.
+
+then((answers) => {
+  if(answers.vehicle === 'Truck'){
+    console.log('Truck cannot tow itself');
+  } else {
+    this.startCLI();
+  }
+});
+
+
+Leif for example gave me the hint of using "instance of" and help me fix code that got out of order when I tried to add "if else" statements on CLi.ts. He helped me fixed startCLi method when it moved out of the CLi class when I started adding if else statements.
+
 ## Tests
 
 npm run build and npm run start.

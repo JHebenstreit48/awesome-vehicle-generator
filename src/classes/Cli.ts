@@ -269,8 +269,7 @@ class Cli {
   }
 
   // method to find a vehicle to tow
-  // TODO: add a parameter to accept a truck object
-  findVehicleToTow(Truck): void {
+  findVehicleToTow(truck: Truck): void {
     inquirer
       .prompt([
         {
@@ -289,21 +288,14 @@ class Cli {
         // TODO: check if the selected vehicle is the truck
         // TODO: if it is, log that the truck cannot tow itself then perform actions on the truck to allow the user to select another action
         // TODO: if it is not, tow the selected vehicle then perform actions on the truck to allow the user to select another action
-        if (this.vehicles === Truck) {
+        if (answers.vehicleToTow === truck) {
           console.log(`${Truck}.} cannot tow itself.`)
-        } else (answers.action === `Tow ${this.vehicles}`) {
-          // start the cli to return to the initial prompt if the user wants to select or create another vehicle
-          this.startCli();
-          return;
         } else {
-          // exit the cli if the user selects exit
-          this.exit = true;
-        }
-        if (!this.exit) {
-          // if the user does not want to exit, perform actions on the selected vehicle
+          truck.tow(answers.vehicleToTow)
+          // start the cli to return to the initial prompt if the user wants to select or create another vehicle
           this.performActions();
         }
-      })
+      });
   }
 
   // method to perform actions on a vehicle
@@ -390,14 +382,19 @@ class Cli {
           }
           // TODO: add statements to perform the tow action only if the selected vehicle is a truck. Call the findVehicleToTow method to find a vehicle to tow and pass the selected truck as an argument. After calling the findVehicleToTow method, you will need to return to avoid instantly calling the performActions method again since findVehicleToTow is asynchronous.
 
-        
+
 
         } else if (answers.action === 'tow') {
           //: find the selected vehicle and make sure it is a truck
+          inquirer.prompt
           for (let i = 0; i < this.vehicles.length; i++) {
-            if (this.vehicles[i].vin === this.selectedVehicleVin) {
-              this.vehicles[i].findVehicleToTow(Vehicle instanceof Truck);
-              return Truck;
+            const vehicle = this.vehicles[i]
+            if (vehicle.vin === this.selectedVehicleVin) {
+              if (vehicle instanceof Truck) {
+                this.findVehicleToTow(vehicle);
+                return
+              }
+              break
             }
           }
         }
