@@ -63,7 +63,6 @@ class Cli {
         },
       ])
       .then((answers) => {
-        console.log(answers)
         if (answers.vehicleType === 'Car') {
           // create a car
           this.createCar();
@@ -112,7 +111,6 @@ class Cli {
         },
       ])
       .then((answers) => {
-        console.log("createCar answers", answers)
         const car = new Car(
 
           Cli.generateVin(),
@@ -174,7 +172,6 @@ class Cli {
         },
       ])
       .then((answers) => {
-        console.log("createTruck answers", answers)
 
         const truck = new Truck(
           Cli.generateVin(),
@@ -252,7 +249,6 @@ class Cli {
         },
       ])
       .then((answers) => {
-        console.log("createMotorbike answers", answers)
 
         const motorBike = new Motorbike(
           Cli.generateVin(),
@@ -330,7 +326,6 @@ class Cli {
         },
       ])
       .then((answers) => {
-        console.log("performActions answers", answers)
 
         // perform the selected action
         if (answers.action === 'Print details') {
@@ -394,15 +389,16 @@ class Cli {
             if (this.vehicles[i].vin === this.selectedVehicleVin && this.vehicles[i] instanceof Truck) {
               let truckSelect: Truck
               truckSelect = this.vehicles[i] as Truck
-              truckSelect.tow(this.findVehicleToTow());
+              this.findVehicleToTow(truckSelect);
+              return
             }
           }
         } else if (answers.action === 'Wheelie') {
           for (let i = 0; i < this.vehicles.length; i++) {
             if (this.vehicles[i].vin === this.selectedVehicleVin && this.vehicles[i] instanceof Motorbike) {
-              let motorbikeSelect: Truck
-              motorbikeSelect = this.vehicles[i] as Truck
-              motorbikeSelect.tow(this.wheelie());
+              let motorbikeSelect: Motorbike
+              motorbikeSelect = this.vehicles[i] as Motorbike
+              motorbikeSelect.wheelie();
             }
           }
         }
