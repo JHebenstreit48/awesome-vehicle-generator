@@ -428,7 +428,6 @@ class Cli {
         },
       ])
       .then((answers) => {
-        console.log(answers)
 
         // check if the user wants to create a new vehicle or select an existing vehicle
         if (answers.CreateOrSelect === 'Create a new vehicle') {

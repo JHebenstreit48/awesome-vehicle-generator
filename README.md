@@ -29,7 +29,7 @@ Use npm run start to create an interface for cars, trucks, and motorbikes.
 
 ## Contributions
 
-Starter code included with the module 8 challenge.
+Starter code included with the module 8 challenge is included in the files.
 
 I reviewed these resources while working on the project:
 https://www.w3schools.com/js/js_object_accessors.asp,
