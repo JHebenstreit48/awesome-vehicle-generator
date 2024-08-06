@@ -19,7 +19,7 @@ class Motorbike extends Vehicle {
     year: number,
     weight: number,
     topSpeed: number,
-    wheels: Wheel[]
+    wheels: Wheel[],
   ) {
 
     super()
@@ -39,12 +39,14 @@ class Motorbike extends Vehicle {
       this.wheels = wheels;
     }
   }
-  
-  wheelie(vehicle: Motorbike): void {
-    const makeAndModel = (`${vehicle.make} ${vehicle.model}`)
+  // TODO: Implement the wheelie method
+  wheelie(): void {
+    const makeAndModel = (`${this.make} ${this.model}`)
 
-      console.log(`Motorbike ${makeAndModel} is doing a wheelie!`)
+      console.log(`Motorbike ${makeAndModel} is doing a wheelie`)
+
   }
+  // TODO: The method should log the message "Motorbike [make] [model] is doing a wheelie!"
     
   override printDetails(): void {
 

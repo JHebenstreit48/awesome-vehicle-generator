@@ -1,13 +1,12 @@
-
-  # Awesome Vehicle Generator
+# Awesome Vehicle Generator
 
   ![Static Badge](https://img.shields.io/badge/License-ISC-darkred)
 
-  ## Description
+## Description
 
   To create a TypeScript file of an interface for cars , trucks, and motor bikes.
 
-  ## Table of Contents
+## Table of Contents
 
 - [Description](#description)
 - [Installation](#installation)
@@ -38,6 +37,10 @@ https://www.google.com/search?q=what+does+the+keyword+implements+do+in+JavaScrip
 https://www.google.com/search?q=new+keyword+in+typescript&oq=New+keyword+in+TypeScript&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyCAgBEAAYFhgeMggIAhAAGBYYHjIICAMQABgWGB4yCAgEEAAYFhgeMg0IBRAAGIYDGIAEGIoFMg0IBhAAGIYDGIAEGIoFMgoIBxAAGIAEGKIE0gEINjkzNWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8,
 https://blog.logrocket.com/when-how-use-interfaces-classes-typescript/,
 https://zoom.us/rec/play/znB-BDOz6bYOiu6OcD6QFeWl2oCy_E52B1i97t8Ji5bMbQY47eZtuKzNHvUK7FZ-hGEFM2odHNZ29Q4i.6tFtMmmqBOQFStQ2,
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax,
+https://www.tutorialspoint.com/what-is-the-use-of-this-keyword-in-typescript,
+https://www.google.com/search?q=TypeScript+interface+classes++and+constructors+purpose&sca_esv=0a6ab453dca08831&ei=zkexZtHpHbTUwN4PyZu6kQ8&ved=0ahUKEwjRiLqv6d6HAxU0KtAFHcmNLvIQ4dUDCBA&uact=5&oq=TypeScript+interface+classes++and+constructors+purpose&gs_lp=Egxnd3Mtd2l6LXNlcnAiNlR5cGVTY3JpcHQgaW50ZXJmYWNlIGNsYXNzZXMgIGFuZCBjb25zdHJ1Y3RvcnMgcHVycG9zZTIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBEjmH1D4B1jnHHABeAGQAQCYAaUBoAHoEaoBBDEuMTe4AQPIAQD4AQGYAgigAtwGwgIKEAAYsAMY1gQYR8ICChAhGKABGMMEGAqYAwCIBgGQBgiSBwMxLjegB4g_&sclient=gws-wiz-serp,
+https://www.google.com/search?q=void+in+TypeScript+meaning&oq=void+in+TypeScript+meaning&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyDQgFEAAYhgMYgAQYigUyCggGEAAYogQYiQUyCggHEAAYgAQYogQyCggIEAAYogQYiQXSAQg5NTE3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof,
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return,
 https://www.google.com/search?q=void+in+TypeScript+meaning&oq=void+in+TypeScript+meaning&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyDQgFEAAYhgMYgAQYigUyCggGEAAYogQYiQUyCggHEAAYgAQYogQyCggIEAAYogQYiQXSAQg5NTE3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8
@@ -49,10 +52,6 @@ This is the example code that Phy Pham gave me when I got stuck:
 then((answers) => {
   if(answers.vehicle === 'Truck'){
     console.log('Truck cannot tow itself');
-  } else {
-    this.startCLI();
-  }
-});
 
 Leif for example gave me the hint of using "instance of" and help me fix code that got out of order when I tried to add "if else" statements on CLi.ts. He helped me fixed startCLi method when it moved out of the CLi class when I started adding if else statements.
 
