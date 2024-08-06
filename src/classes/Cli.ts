@@ -288,7 +288,7 @@ class Cli {
       .then((answers) => {
 
         if (answers.vehicleToTow === truck) {
-          console.log(`${Truck}.} cannot tow itself.`)
+          console.log(`Truck cannot tow itself.`)
         } else {
           truck.tow(answers.vehicleToTow)
           // start the cli to return to the initial prompt if the user wants to select or create another vehicle

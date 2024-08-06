@@ -52,6 +52,8 @@ This is the example code that Phy Pham gave me when I got stuck:
 then((answers) => {
   if(answers.vehicle === 'Truck'){
     console.log('Truck cannot tow itself');
+      } else {
+        this.startCLI(); } });
 
 Leif for example gave me the hint of using "instance of" and help me fix code that got out of order when I tried to add "if else" statements on CLi.ts. He helped me fixed startCLi method when it moved out of the CLi class when I started adding if else statements.
 
