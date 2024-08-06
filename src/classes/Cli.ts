@@ -287,13 +287,14 @@ class Cli {
       ])
       .then((answers) => {
 
-            if (vehicle.vin === answers.vehicleToTow.vin) {
-              console.log(`This vehicle cannot tow itself.`)
-            } else {
-              vehicle.tow(answers.vehicleToTow)
-            }
-          }
-      );
+        if (answers.vehicleToTow === truck) {
+          console.log(`${Truck}.} cannot tow itself.`)
+        } else {
+          truck.tow(answers.vehicleToTow)
+          // start the cli to return to the initial prompt if the user wants to select or create another vehicle
+          this.performActions();
+      }
+  });
   }
 
   // method to perform actions on a vehicle
@@ -428,8 +429,7 @@ class Cli {
         },
       ])
       .then((answers) => {
-        console.log(answers)
-      
+
         // check if the user wants to create a new vehicle or select an existing vehicle
         if (answers.CreateOrSelect === 'Create a new vehicle') {
           this.createVehicle();
