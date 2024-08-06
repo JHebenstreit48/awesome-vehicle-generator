@@ -1,13 +1,12 @@
-
-  # Awesome Vehicle Generator
+# Awesome Vehicle Generator
 
   ![Static Badge](https://img.shields.io/badge/License-ISC-darkred)
 
-  ## Description
+## Description
 
   To create a TypeScript file of an interface for cars , trucks, and motor bikes.
 
-  ## Table of Contents
+## Table of Contents
 
 - [Description](#description)
 - [Installation](#installation)
@@ -43,7 +42,7 @@ https://www.tutorialspoint.com/what-is-the-use-of-this-keyword-in-typescript,
 https://www.google.com/search?q=TypeScript+interface+classes++and+constructors+purpose&sca_esv=0a6ab453dca08831&ei=zkexZtHpHbTUwN4PyZu6kQ8&ved=0ahUKEwjRiLqv6d6HAxU0KtAFHcmNLvIQ4dUDCBA&uact=5&oq=TypeScript+interface+classes++and+constructors+purpose&gs_lp=Egxnd3Mtd2l6LXNlcnAiNlR5cGVTY3JpcHQgaW50ZXJmYWNlIGNsYXNzZXMgIGFuZCBjb25zdHJ1Y3RvcnMgcHVycG9zZTIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBEjmH1D4B1jnHHABeAGQAQCYAaUBoAHoEaoBBDEuMTe4AQPIAQD4AQGYAgigAtwGwgIKEAAYsAMY1gQYR8ICChAhGKABGMMEGAqYAwCIBgGQBgiSBwMxLjegB4g_&sclient=gws-wiz-serp,
 https://www.google.com/search?q=void+in+TypeScript+meaning&oq=void+in+TypeScript+meaning&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyDQgFEAAYhgMYgAQYigUyCggGEAAYogQYiQUyCggHEAAYgAQYogQyCggIEAAYogQYiQXSAQg5NTE3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8
 
-I also received advice when I got stuck for Argenis (Ruben) Dominguez, Carlin Shaw, hints from Leif Heitland. Phy Pham assisted me with some code, but it only addressed a portion of the problems I was having at the time. I also had assistance from tutor Wesley Clements on 8/04/2024 as of resolving the errors that were in my code as of the day before. I also had some assistance from Brandon Leek a tutor. I also got assistance from TAs Michael Hodges, Daniel Ceballos, and Carlin Shaw.
+I also received advice when I got stuck for Argenis (Ruben) Dominguez, Carlin Shaw, hints from Leif Heitland. Phy Pham assisted me with some code, but it only addressed a portion of the problems I was having at the time. I also had assistance from tutor Wesley Clements on 8/04/2024 as of resolving the errors that were in my code as of the day before. I also had some assistance from Brandon Leek a tutor. I also got assistance from TAs Michael Hodges, Daniel Ceballos.
 
 The following code example was suggested to me by Phy Pham.
 
