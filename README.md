@@ -40,8 +40,11 @@ https://blog.logrocket.com/when-how-use-interfaces-classes-typescript/,
 https://zoom.us/rec/play/znB-BDOz6bYOiu6OcD6QFeWl2oCy_E52B1i97t8Ji5bMbQY47eZtuKzNHvUK7FZ-hGEFM2odHNZ29Q4i.6tFtMmmqBOQFStQ2,
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof,
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return,
+https://www.google.com/search?q=void+in+TypeScript+meaning&oq=void+in+TypeScript+meaning&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyDQgFEAAYhgMYgAQYigUyCggGEAAYogQYiQUyCggHEAAYgAQYogQyCggIEAAYogQYiQXSAQg5NTE3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8
 
-I also received advice when I got stuck for Argenis (Ruben) Dominguez, Carlin Shaw, hints from Leif Heitland. Phy Pham assisted me with the following code, but it only addressed a portion of the problems I was having at the time. I also had assistance from tutor Wesley Clements on 8/04/2024 as of resolving the errors that were in my code as of the day before.
+I also received advice when I got stuck for Argenis (Ruben) Dominguez, Carlin Shaw, hints from Leif Heitland. Phy Pham assisted me with the following code, but it only addressed a portion of the problems I was having at the time. I also had assistance from tutor Wesley Clements on 8/04/2024 as of resolving the errors that were in my code as of the day before. I also had assistance from Brandon Leek.
+
+This is the example code that Phy Pham gave me when I got stuck:
 
 then((answers) => {
   if(answers.vehicle === 'Truck'){
@@ -50,7 +53,6 @@ then((answers) => {
     this.startCLI();
   }
 });
-
 
 Leif for example gave me the hint of using "instance of" and help me fix code that got out of order when I tried to add "if else" statements on CLi.ts. He helped me fixed startCLi method when it moved out of the CLi class when I started adding if else statements.
 
